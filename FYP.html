@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Miraj Ahmed</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="generic.html">Current Works</a></li>
+          <li class="active"><a href="FYP.html">Final Year Project</a></li>
+          <li><a href="internship.html">Internship</a></li>
+          <li><a href="professional.html">Activities & Certificates</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mirajsym/"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linked In</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/mirajSYM02"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post">
+          <header class="major">
+            <h1>
+              Final Year Project<br />
+              Brief
+            </h1>
+          </header>
+
+          <!-- Text stuff -->
+         
+          <p >
+            <h2>Project Scope</h2>
+          
+(a)	Emergency responses to the rescue.</br>
+(b)	Mobile app provides the notification of incident.</br>
+(c)	 Mobile app shows the location of the incident.</br>
+<p></p>
+                   
+          </p>
+          
+          <header>
+            <h2>A short description</h2>
+            
+          </header>
+          <p>
+            This project's primary objective is to reduce traffic fatalities. If response time is shortened, fatalities will eventually decrease. Thus, the project's sole significance is reflected in its name, which is alert and notification.
+          </p>
+
+          <hr />
+
+          <!-- Lists -->
+          <h2>Technology Implemented</h2>
+          <div class="row">
+            <div class="col-6 col-12-small">
+              <h3>Software</h3>
+              <ul>
+                <li>FLutter</li>
+                <li>Firestore- for database</li>
+                <li>Node.JS for data processing</li>
+                
+              </ul>
+
+              
+            </div>
+            <div class="col-6 col-12-small">
+              <h3>Hardware</h3>
+              <ul>
+                <li>NODEMCU ESP32</li>
+                <li>GY-NEO6MV2 Flight Control GPS Module</li>
+                <li>5VDC HC-SR04 Ultrasonic Sensor</li>
+                <li>3-Axis Accelerometer</li>
+                <li>Buzzer-PCB Mount</li>
+              </ul>
+
+              
+              </ul>
+            </div>
+          </div>
+          
+
+        <hr>
+
+          <!-- Table -->
+          <h2>Use Cases of the System</h2>
+          
+          
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Use Case </th>
+                  <th>Description</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>(I) Sign Up</td>
+                  <td>This use case describes when a new user tries to use the application feature.</td>
+                  
+                </tr>
+                <tr>
+                  <td>(II) Sign In</td>
+                  <td>This use case is the follow up of the successful registration to the application.</td>
+                  
+                </tr>
+                <tr>
+                  <td>(III) Accident Location</td>
+                  <td>This use case describes the accident location that the user sees on the application.</td>
+                  
+                </tr>
+                <tr>
+                  <td>(IV) Accident Notification</td>
+                  <td>This use case describes the accident notification that the user receives on the application.</td>
+                  
+                </tr>
+                <tr>
+                  <td>(V) Alert</td>
+                  <td>This use case is mainly on the hardware part, it describes the alert that the driver will receive if the driver crosses the safety limit threshold.</td>
+                  
+                </tr>
+                
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2"></td>
+                  
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          
+
+        
+
+         <hr>
+          <h3>Hardware &amp; Software</h3>
+          <p>
+            <span class="image left"><img src="images/pic12.jpg" alt="" /></span
+            >The NodeMCU is implemented on WI-FI which is why the first and foremost job is to provide connection to the controller. As soon as the controller receives the connection the GPS sensor starts looking for satellite, through which the GPS sensor will determine the incident location.
+            The alert is generated entirely within the device; no external application is required. When the ultrasonic sensor detects a certain distance between the rider car and the car ahead or any obstacle ahead, the sensor activates the buzzer, which begins emitting sounds to alert the driver. The driver can disable the alert by switching it off or simply increasing the distance between the cars or the obstacle.
+            While the GPS sensor generates location data via satellite, the real hero behind the curtain is the 3-axis accelerometer. The accelerometer continuously records the values of the XYZ axis. The threshold value for each axis is determined by calculating the three-axis value of the UTM road. Following that, the application receives the location via a push notification, which the user can view. 
+            
+          </p>
+          <hr>
+          <p>
+            <span class="image right"
+              ><img src="images/pic17.jpg" alt="" /></span
+            >In the mobile android application the location is displayed on the map coordinates. However, notification will be the first one to be carried to the application before the location can be seen. The process is shown in figure 4, where the snaps from the left is considered as the first to start then carry on until the very right of the figure. On the first snap the application is on the hompage before the arrival of notification. Later snap depicts the arrival of the notification which carries the coordinates of the location. After pressing upon the notification, the later snap will be visible on the application and it will provide the accident location details as well as a pointer.
+          </p>
+<hr>
+       
+
+<center><button href="https://youtu.be/SRxRyUl01bM"> Press here for demo </button></center>
+
+        
+        
+        <hr>
+      </div>
+      
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <h2>&copy; Miraj Ahmed</h2>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
