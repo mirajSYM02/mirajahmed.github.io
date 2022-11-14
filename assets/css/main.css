@@ -2684,11 +2684,15 @@ input[type="radio"]:focus + label:before {
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
+.center{
+  text-align: center;
+  
+}
 
 /* Image */
 
 .image {
-  border: 0;
+  border: 5px;
   display: inline-block;
   position: relative;
 }
@@ -2699,7 +2703,9 @@ input[type="radio"]:focus + label:before {
 
 .image.left,
 .image.right {
-  max-width: 40%;
+  max-width: 60%;
+  border: 5px solid #555;
+
 }
 
 .image.left img,
@@ -2721,8 +2727,9 @@ input[type="radio"]:focus + label:before {
 
 .image.fit {
   display: block;
-  margin: 2.5rem 0;
-  width: 100%;
+  margin: none;
+  width: 85%;
+  border: 5px solid #555;
 }
 
 .image.fit:first-child {
@@ -2731,20 +2738,23 @@ input[type="radio"]:focus + label:before {
 
 .image.fit img {
   width: 100%;
+  
 }
 
 .image.main {
+  
   display: block;
   margin:  auto !important;
-  width: 75%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .image.main:first-child {
-  margin-top: 40%;
+  margin-top: auto;
   
 }
+
 
 .image.main img {
   width: 80%;
@@ -2752,11 +2762,11 @@ input[type="radio"]:focus + label:before {
 
 @media screen and (max-width: 736px) {
   .image.fit {
-    margin: 2rem 0;
+    margin: 4rem 0;
   }
 
   .image.main {
-    margin: 2rem 0;
+    margin: 4rem 0;
   }
 }
 
