@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -2728,8 +2723,9 @@ input[type="radio"]:focus + label:before {
 .image.fit {
   display: block;
   margin: none;
-  width: 85%;
+  width: 55%;
   border: 5px solid #555;
+  border-radius: 50%;
 }
 
 .image.fit:first-child {
@@ -2738,8 +2734,25 @@ input[type="radio"]:focus + label:before {
 
 .image.fit img {
   width: 100%;
-  
 }
+
+
+
+.image.project {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  border: 5px solid #555;
+}
+
+.image.project:first-child {
+  margin-top: 0;
+}
+
+.image.project img {
+  width: 100%;
+}
+
 
 .image.main {
   
