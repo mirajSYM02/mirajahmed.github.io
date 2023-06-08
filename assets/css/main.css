@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html,
 body,
 div,
@@ -284,7 +278,6 @@ h6 {
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
   margin: 0 0 1rem 0;
 }
 
@@ -300,33 +293,41 @@ h6 a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.1;
   margin: 0 0 2rem 0;
 }
 
 h2 {
-  font-size: 1.75rem;
-  line-height: 1.3;
+  font-size: 2.5rem;
+  line-height: 1;
   margin: 0 0 1.5rem 0;
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
 }
 
 h4 {
   font-size: 1rem;
+  line-height: 1.3;
+  margin: 0 0 0.5rem 0;
 }
 
 h5 {
   font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0 0 0.5rem 0;
 }
 
 h6 {
   font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
 }
+
 
 sub {
   font-size: 0.8rem;
@@ -2135,6 +2136,73 @@ hr {
   }
 }
 
+
+
+/* Design Button */
+.button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+  content: "Let's Go";
+  height: 50px;
+  width: 150px;
+  background-color: #008080;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "For Demo";
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  color: #008080;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+/* Design Button Ends */
+/* Another Design Button */
+
+/* Another Design Button Ends */
+
+
 /* Box */
 
 .box {
@@ -2689,6 +2757,7 @@ input[type="radio"]:focus + label:before {
   
 }
 
+
 /* Image */
 
 .image {
@@ -2763,7 +2832,7 @@ input[type="radio"]:focus + label:before {
   
   display: block;
   margin:  auto !important;
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
