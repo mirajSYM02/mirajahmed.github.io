@@ -2141,14 +2141,17 @@ hr {
 /* Design Button */
 .button {
   height: 50px;
-  width: 150px;
+  min-width: 150px; /* Use min-width instead of width */
   border: none;
   border-radius: 10px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
 }
+
 
 .button:hover {
   box-shadow: .5px .5px 150px #252525;
