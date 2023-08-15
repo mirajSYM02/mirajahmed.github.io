@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="/index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Post -->
+      <section class="post">
+        <header class="major">
+          <h2>Predicting Factors Behind Employee Attrition</h2>
+          <h3>Using Logistic Regression & Random Forest Classifier with XGBoost</h3>
+        </header>
+        <p>
+          This is the capstone project from <a
+            href="https://www.coursera.org/professional-certificates/google-advanced-data-analytics"
+            target="_blank">Google Advanced Data Analytics Professional Program on Coursera</a>
+        </p>
+        </p>
+        <h3>Introduction</h3>
+        <p>
+          In today's fiercely competitive job market, employee attrition has become a major concern for organizations.
+          High
+          turnover rates can disrupt productivity, strain resources, and impact overall business performance. To address
+          this
+          critical challenge, I embarked on a data-driven journey to unravel the factors driving employee attrition and
+          identify
+          potential solutions.
+        </p>
+
+        <h3>Stakeholder</h3>
+        <p>
+          Stakeholders for this project include the HR department, management team, and company executives who are
+          interested in
+          understanding employee turnover and identifying factors contributing to attrition.
+        </p>
+
+        <h3>Goal</h3>
+        <p>
+          The goal is to analyze employee turnover and identify key factors influencing attrition, enabling the company
+          to take
+          proactive measures for employee retention and improve workforce management.
+        </p>
+
+        <div class="image project">
+          <img src="/images/pie.png" alt="Pie Chart" />
+        </div>
+        <br>
+        <h3>Objective</h3>
+        <p>
+          The objective of this project was to analyze a comprehensive HR dataset and build predictive models to gain
+          insights
+          into why employees leave the company. By understanding the key drivers of attrition, we aimed to provide
+          actionable
+          recommendations to reduce turnover and enhance employee retention.
+        </p>
+
+        <div class="image project">
+          <img src="/images/left_histogram.png" alt="Histogram" />
+        </div>
+        <br>
+        <h3>Approach</h3>
+        <p>
+          We adopted the STAR method (Situation, Task, Action, Result) to guide our analysis:
+        </p>
+
+        <h4>1. Situation:</h4>
+        <p>
+          Our dataset comprised various employee attributes, such as satisfaction level, last evaluation, number of
+          projects,
+          average monthly hours, tenure, work accidents, promotions, salary, and department. It included both employees
+          who had
+          left the company and those who had stayed.
+        </p>
+
+        <h4>2. Task:</h4>
+        <p>
+          The primary task was to conduct Exploratory Data Analysis (EDA) to understand the relationships between
+          variables and
+          identify patterns and trends. We also wanted to explore the impact of different factors on employee attrition
+          and create
+          predictive models to make informed decisions.
+        </p>
+
+        <h4>3. Action:</h4>
+        <p>
+          During EDA, we discovered that the dataset contained duplicates, which we promptly removed. We renamed columns
+          and
+          encoded categorical variables to make them suitable for model building. We visualized the data using various
+          plots, such
+          as box plots, scatter plots, and bar charts, to uncover insights.
+        </p>
+
+        <p>
+          Next, we applied machine learning models, including Logistic Regression, Random Forest, and XGBoost, to
+          predict employee
+          attrition. We optimized hyperparameters using GridSearchCV and evaluated the models using multiple metrics,
+          including
+          accuracy, precision, recall, F1-score, and AUC-ROC. And the results are:
+        </p>
+
+        <h4>Comparison of Evaluation Metrics:</h4>
+        <strong>Logistic Regression:</strong>
+        <ul>
+          <li>Accuracy: 82.51%</li>
+          <li>Precision: 46.69%</li>
+          <li>Recall (Sensitivity or True Positive Rate): 26.19%</li>
+          <li>F1-score: 33.56%</li>
+          <li>AUC-ROC: 88.13%</li>
+        </ul>
+
+        <strong>Random Forest Classifier:</strong>
+        <ul>
+          <li>Accuracy: 98.50%</li>
+          <li>Precision: 98.05%</li>
+          <li>Recall: 92.80%</li>
+          <li>F1-score: 95.35%</li>
+          <li>AUC-ROC: 98.06%</li>
+        </ul>
+
+        <h4>4. Result</h4>
+        <p>
+          Our analysis revealed several key insights:
+        <ul>
+          <li>Employees with low satisfaction levels and low tenure were more likely to leave the company.</li>
+          <li>Work accidents did not appear to have a significant impact on attrition.</li>
+          <li>Lack of promotions was associated with higher attrition rates.</li>
+          <li>Departments sales and technical departments experienced higher attrition.</li>
+          <li>Salary levels were also a crucial factor in influencing attrition rates, with employees in the low salary
+            bracket
+            being more likely to leave.</li>
+        </ul>
+        </p>
+
+        <div class="image project">
+          <img src="/images/left_feature.png" alt="Feature Chart" />
+        </div>
+        <br>
+        <h3>Conclusion</h3>
+        <p>
+          In conclusion, our data-driven journey provided invaluable insights into employee attrition. Armed with these
+          findings, organizations can take targeted actions to improve employee retention. To reduce attrition,
+          companies should
+          focus on enhancing employee satisfaction, providing opportunities for growth and promotions, and offering
+          competitive
+          salary packages.
+        </p>
+
+        <h3>Recommendations</h3>
+        <p>
+          Based on the model results, we propose the following recommendations:
+        <ol>
+          <li>Conduct regular employee satisfaction surveys to identify areas of improvement and address employee
+            concerns.</li>
+          <li>Implement talent development programs to offer career advancement opportunities and promotions based on
+            merit.</li>
+          <li>Review and adjust salary scales to ensure competitiveness within the industry and retain top talent.</li>
+          <li>Provide support and resources to enhance work-life balance, reducing employee burnout and stress.</li>
+        </ol>
+        </p>
+
+        <h3>Next Steps</h3>
+        <p>
+          While our models have demonstrated high accuracy and predictability, continuous monitoring and refinement are
+          essential
+          to ensure their long-term effectiveness. Organizations should regularly update the models with fresh data to
+          keep them
+          relevant and enhance predictive power.
+        </p>
+
+        <h3>Ethical Considerations</h3>
+        <p>
+          Throughout the project, we adhered to ethical principles by handling sensitive employee data with utmost
+          confidentiality. We ensured data privacy and security to protect the personal information of individuals.
+        </p>
+
+        <p>
+          In conclusion, our data-driven approach has shed light on the complex dynamics of employee attrition. By
+          leveraging
+          these insights, organizations can build a motivated and engaged workforce, creating a positive work
+          environment and
+          fostering long-term growth and success. Employee retention is not just a metric; it's an investment in the
+          future of any
+          organization. Let us take the first step towards building a thriving workplace and redefining the future of
+          work.
+        </p>
+
+        <p><a href="https://www.kaggle.com/code/mirajahmedlearns/google-advanced-data-analytics-capstone-project"
+            target="_blank">View
+            the
+            notebook and other details here</a>
+        </p>
+      </section>
+    </div>
+    </section>
+  </div>
+
+
+
+  <!-- Copyright -->
+  <div id="copyright">
+    <ul>
+      <h3>&copy; Miraj Ahmed</h3>
+
+    </ul>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
