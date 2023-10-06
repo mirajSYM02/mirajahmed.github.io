@@ -59,21 +59,207 @@
           <h2>Databel, Customer Churn Analysis on Tableau</h2>
         </header>
 
-        <h3>Situation:</h3>
-        <p>In this Tableau case study, I worked with a dataset from a telecom company called Databel. The company had
-          a primary focus on reducing customer churn, which was a top priority for their subscription-based business.
-          My task was to analyze the churn rates and gain insights into why customers were churning at the rate they
-          were. The story that includes four dashboards for several aspects of churning is fully dynamic dashboards.</p>
+      <header class="major">
+          <h2>Databel, Customer Churn Analysis on Tableau</h2>
+        </header>
 
+        <div id="brief">
+          <h3>Project Brief</h3>
+          <p>The <strong>churn rate</strong> is a critical business metric that measures the loss of
+            <strong>subscribers</strong> or <strong>employees</strong> over a specific <strong>time period</strong>. It
+            applies to both <strong>subscription-based businesses</strong> and <strong>workforce management</strong>. In
+            essence, it represents the opposite of the <strong>growth rate</strong>, as it quantifies
+            <strong>customer</strong> or <strong>talent attrition</strong>. To thrive, a company must consistently
+            acquire more <strong>subscriptions</strong> or <strong>employees</strong> than it loses.
+            <strong>Industry-specific benchmarks</strong> for <strong>churn rates</strong> provide a valuable
+            competitive perspective.
+          </p>
+        </div>
+        <strong>In case you are only interested to view the dashboard, feel free to click below link!</strong>
         <p><a
             href="https://public.tableau.com/app/profile/miraj.ahmed/viz/DatabelCustomerChurnRateAnalysis/DatabelPresentation"
-            target="_blank">Feel free to work with the dashboards.</a></p>
+            target="_blank">Customer Churn Dashboard Link</a></p>
+        <div id="content">
+          <h3>Data Dictionary</h3>
+          <table border="1">
+            <caption>Customer Status</caption>
+            <tr>
+              <th>Data</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Customer ID</td>
+              <td>The unique ID that identifies a customer</td>
+            </tr>
+            <tr>
+              <td>Churn Label</td>
+              <td>Contains "Yes" or "No" to indicate if a customer churned</td>
+            </tr>
+            <tr>
+              <td>Churn Reason</td>
+              <td>The particular reason why the customer ended the contract</td>
+            </tr>
+            <tr>
+              <td>Churn Category</td>
+              <td>Groups multiple churn reasons together for analysis purposes</td>
+            </tr>
+          </table>
 
+          <table border="1">
+            <caption>Demographics</caption>
+            <tr>
+              <th>Data</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>The gender of the customer, indicated by "Male", "Female" or "Prefer not to say"</td>
+            </tr>
+            <tr>
+              <td>Under 30</td>
+              <td>Indicates if the customer is under 30 with "Yes" or "No"</td>
+            </tr>
+            <tr>
+              <td>Senior</td>
+              <td>Indicates if the customer is above 65 with "Yes" or "No"</td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td>The age of the customer</td>
+            </tr>
+          </table>
+
+          <table border="1">
+            <caption>Contract Information</caption>
+            <tr>
+              <th>Data</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Contract Type</td>
+              <td>Contains "Month-to-Month", "One Year" or "Two Year"</td>
+            </tr>
+            <tr>
+              <td>Payment Method</td>
+              <td>Preferred payment method of the customer indicated with "Credit Card", "Direct Debit" or "Paper Check"
+              </td>
+            </tr>
+            <tr>
+              <td>State</td>
+              <td>The code of the state where the customer lives</td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td>Phone number of the customer</td>
+            </tr>
+            <tr>
+              <td>Group</td>
+              <td>Indicates if the customer is part of a group contract. A group contract offers advantages and is
+                generally cheaper. Contains "Yes" or "No"</td>
+            </tr>
+            <tr>
+              <td>Number of Customers in a Group</td>
+              <td>Number of customers part of the group</td>
+            </tr>
+          </table>
+
+          <table border="1">
+            <caption>Subscription Types & Charges</caption>
+            <tr>
+              <th>Data</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Account Length (in months)</td>
+              <td>The number of months the customer has been with Databel</td>
+            </tr>
+            <tr>
+              <td>Local Calls</td>
+              <td>Amount of local (within the US) calls from the customer</td>
+            </tr>
+            <tr>
+              <td>Intl Calls</td>
+              <td>Amount of international (outside the US) calls from the customer</td>
+            </tr>
+            <tr>
+              <td>Intl Mins</td>
+              <td>The number of minutes spent calling internationally. Intl Active: Indicates if the customer called
+                internationally with a "Yes" or "No"</td>
+            </tr>
+            <tr>
+              <td>Intl Plan</td>
+              <td>Indicates if the customer has a premium plan to call internationally for free with "Yes" or "No. This
+                premium is reflected in the amount of the monthly charge</td>
+            </tr>
+            <tr>
+              <td>Extra International Charges</td>
+              <td>Contains the extra charges for international calls for customers who are not on an international plan
+              </td>
+            </tr>
+            <tr>
+              <td>Customer Service Calls</td>
+              <td>The number of calls made to customer service</td>
+            </tr>
+            <tr>
+              <td>Avg Monthly GB Download</td>
+              <td>Contains the average monthly download volume in gigabytes</td>
+            </tr>
+            <tr>
+              <td>Unlimited Data Plan</td>
+              <td>Indicates if the customer has free unlimited download capacity with "Yes" or "No". This premium is
+                reflected in the amount of the monthly charge</td>
+            </tr>
+            <tr>
+              <td>Extra Data Charges</td>
+              <td>Contains the extra charges for data downloads for customers who are not on an unlimited plan</td>
+            </tr>
+            <tr>
+              <td>Monthly Charges</td>
+              <td>Average of all Monthly Charges to the customer</td>
+            </tr>
+            <tr>
+              <td>Total Charges</td>
+              <td>Sum of all monthly charges</td>
+            </tr>
+          </table>
+        </div>
         <h3>Task:</h3>
-        <p>Using Tableau, I created several dashboards to analyze the churn rates of Databel, later combined them in a
-          story to show depth of insights. The dashboards included calculated fields and various visualizations, such
-          as dual-axis graphs and scatter plots. My goal was to understand the reasons behind customer churn and
-          identify strategies to reduce it.</p>
+        <p>My goal was to <strong>understand</strong> the <strong>reasons</strong> behind <strong>customer
+            churn</strong> and <strong>identify</strong> <strong>strategies</strong> to <strong>reduce</strong> it. The
+          <strong>dashboard's main concern</strong> is to <strong>answer</strong> all the <strong>business
+            questions</strong> that will <strong>fulfill</strong> the <strong>customer's need</strong>. It provides
+          <strong>insights</strong> into <strong>critical aspects</strong> of Databel's operations, helping the
+          <strong>company make informed decisions</strong>. Some of the <strong>questions it answers</strong> include:
+        </p>
+
+        <div id="dashboard">
+          <h3>Business Questions from Stakeholders</h3>
+          <ul>
+            <li>What's the total churn rate for "Databel"?</li>
+            <li>Does the count of unique customers match the count of customers?</li>
+            <li>Which of the following is not part of the top 5 churn reasons?</li>
+            <li>What's the most prevalent churn reason?</li>
+            <li>Which state has the highest churn rate?</li>
+            <li>Did you discover the churn rate for senior citizens is significantly above the average? What's the churn
+              rate for that group?</li>
+            <li>What's the average churn rate for people aged between 55 and 60?</li>
+            <li>Which group size has the lowest churn rate?</li>
+            <li>For most people who are not part of a group, the churn rate for people in the group is?</li>
+            <li>What's the churn rate for people on an unlimited plan who consume less than 5 GB of data?</li>
+            <li>The churn rate of customers who have an international plan but don't call internationally is sky-high.
+              How many customers are part of this group?</li>
+            <li>What's the average monthly charge for that same group?</li>
+            <li>How many customers that churned are on a Month-to-Month contract and pay by Direct Debit?</li>
+            <li>What's the churn rate in Alaska (AK) for customers on a Two-Year contract? (Alaska can be found on the
+              top left of the map.)</li>
+            <li>What's the churn rate (in %) for customers outside a group who have an account length of 12 months or
+              less?</li>
+            <li>What's the average number of customer service calls for customers who are on a month-to-month contract
+              and by direct debit?</li>
+            <li>What's the average extra data charge (two decimal points) for customers who are not on an unlimited data
+              plan and consumed less than 5 gigabytes?</li>
+          </ul>
+        </div>
 
         <!-- Dashboard Details -->
         <h3>The Dashboard details:</h3>
@@ -104,16 +290,20 @@
           </li>
         </ul>
 
-        <h3>Action:</h3>
-        <p>To accomplish this, I utilized Tableau's features and functionalities. I created calculated fields to
-          perform necessary calculations and derived meaningful insights from the data. The visualizations included
-          dynamic elements achieved through the use of filters and parameters. By exploring the data and applying
-          different visualizations, I aimed to uncover patterns and relationships that could explain the churn rates.
-        </p>
-
         <!-- Embed the the dashboard -->
         <center><strong>The Dashboard is Shared Below (please use the full screen option to get better view)</strong>
+
+
         </center>
+        <figure>
+          <img class="image project" src="/images/Fullscreen.gif" alt="Fullscreen Image">
+          <center>
+            </<figcaption>The image showcases the button you might want to press for better view of the dashboard
+            </figcaption>
+          </center>
+          <br><br>
+        </figure>
+        <h3>The Dashboard</h3>
         <br>
         <div class="tableau-container" id="viz1696220722661" style="position: relative"><noscript><a href='#'><img
                 alt='Story 1 '
@@ -144,11 +334,17 @@
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
 
+
+
         <h3>Result:</h3>
         <p>Through my analysis in Tableau, I gained valuable insights into the churn rates of Databel. I identified
           key factors that contributed to customer churn and discovered potential strategies to reduce it. The
           visualizations in my dashboard effectively communicated these findings, allowing stakeholders to understand
           the reasons behind churn and make informed decisions to improve customer retention.</p>
+        Apart from this, you can view my other works! I know you would love to...
+        <br>
+        <p><a href="https://public.tableau.com/app/profile/miraj.ahmed/vizzes" target="_blank">View my other Dashboards
+            from my <strong>Tableau</strong> public profile</a></p>
 
 
       </section>
