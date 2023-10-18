@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/noscript.css" />
+  </noscript>
+  <style>
+    /* Define the base styles */
+    .tableau-container {
+      position: relative;
+    }
+
+    /* Apply responsive styles using media queries */
+    @media (max-width: 768px) {
+      .tableau-container {
+        width: 100%;
+        height: 600px;
+        /* Adjust the height as needed */
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .tableau-container {
+        width: 100%;
+        height: 800px;
+        /* Adjust the height as needed */
+      }
+    }
+
+    /* Add more media queries as needed for different screen sizes */
+  </style>
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <a href="/index.html" class="logo">Home</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Post -->
+      <section class="post">
+        <header class="major">
+          <h2>Atlas Labs HR Insights and Recommendations on Tableau</h2>
+        </header>
+
+        <!-- Executive Summary -->
+        <h3>1. Executive Summary:</h3>
+        <ul>
+          <li>Atlas Labs boasts a workforce of <strong>1,470 individuals</strong>, with a notable <strong>16.1%
+              attrition rate</strong>.</li>
+          <li>Historical hiring trends showcase <strong>fluctuations in recruitment patterns</strong>.</li>
+          <li>The majority of employees fall within the <strong>20-29 age group</strong> and are
+            <strong>married</strong>.</li>
+          <li>Attrition varies by <strong>hire date</strong>, <strong>tenure</strong>, and <strong>travel
+              frequency</strong>, warranting <strong>in-depth analysis</strong>.</li>
+          <li>Recommendations encompass <strong>attrition drivers</strong>, <strong>recruitment strategy
+              enhancements</strong>, and <strong>focus on high-risk areas</strong>.</li>
+        </ul>
+
+        <!-- Looking for the dashboard? -->
+        <div style="color: #007BFF; font-size: 18px;">
+          <strong>Looking for the dashboard? </strong>
+          <a href="https://public.tableau.com/views/AtlasLabHRDashboard_16973043938720/HRDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+            target="_blank" style="color: #007BFF; text-decoration: underline;">Check out Atlas lab HR Dashboard</a>
+          <strong> Press here, or scroll below (your choice)</strong>
+        </div>
+
+        <div id="content">
+          <p style="font-size: 18px;">
+            Explore more of my <strong>Tableau</strong> dashboards on my public profile:
+            <a href="https://public.tableau.com/app/profile/miraj.ahmed/vizzes" target="_blank"
+              style="color: #007BFF; text-decoration: underline;">Tableau Public Profile</a>
+          </p>
+        </div>
+
+        <!-- Data Dictionary -->
+        <h3>2. Data Dictionary:</h3>
+        <center><strong>Performance Table</strong></center>
+        <table border="1">
+          <!-- Table content goes here -->
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+            <th>Datatype</th>
+          </tr>
+          <tr>
+            <td>Performance ID</td>
+            <td>A unique ID that identifies an individual performance review.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Employee ID</td>
+            <td>A unique ID that identifies an employee. Connects to Employee table.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Review Date</td>
+            <td>Date an employee's review took place.</td>
+            <td>date</td>
+          </tr>
+          <tr>
+            <td>Environment Satisfaction</td>
+            <td>Text rating for employees' satisfaction with their environment.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Job Satisfaction</td>
+            <td>Text rating for employees' satisfaction with their job role.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Relationship Satisfaction</td>
+            <td>Text rating for employees' satisfaction with their relationships.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Work Life Balance</td>
+            <td>Text rating for employees' satisfaction with their work-life balance.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Self Rating ID</td>
+            <td>Numerical rating for employees' performance based on their own view. Relates to text value in Self
+              Rating.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>Self Rating</td>
+            <td>Text rating for employees' performance based on their own view.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Manager Rating ID</td>
+            <td>Numerical rating for employees' performance based on their manager's view. Relates to text value in
+              Manager Rating.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>Manager Rating</td>
+            <td>Text rating for employees' performance based on their manager's view. Connects to DimRatingLevel.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Training Opportunities Within Year</td>
+            <td>Number of training opportunities offered in the last 12 months.</td>
+            <td>number</td>
+          </tr>
+        </table>
+        <br>
+        <center><strong>Employee Table </strong></center>
+        <table border="1">
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+            <th>Datatype</th>
+          </tr>
+          <tr>
+            <td>Employee ID</td>
+            <td>A unique ID that identifies an employee.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>FirstName</td>
+            <td>First name of an employee.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>LastName</td>
+            <td>Last name of an employee.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>Self-defined employee gender identity.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>Current age of an employee.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>Business Travel</td>
+            <td>Frequency of business travel - three categories: Frequent Traveller, Some Travel, and No Travel.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Department</td>
+            <td>Department an employee works in - three categories: Technology, HR, and Sales.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>DistanceFromHome</td>
+            <td>Kilometer distance between an employee's home and their office.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td>State where the employee lives.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Ethnicity</td>
+            <td>Self-defined employee ethnicity.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>Education level for employees. Connects to Education Level table.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>EducationField</td>
+            <td>Employee field of study.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Job Role</td>
+            <td>Current/latest employee job role.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>MaritalStatus</td>
+            <td>Current/latest employee marital status.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>Salary</td>
+            <td>Current/latest employee salary.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>StockOptionLevel</td>
+            <td>The banding level for stock options that the employee has.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>Overtime</td>
+            <td>Contains "Yes" and "No" to indicate whether an employee is expected to work overtime in their role.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>HireDate</td>
+            <td>Date the employee joined the company.</td>
+            <td>date</td>
+          </tr>
+          <tr>
+            <td>Attrition</td>
+            <td>Contains "Yes" and "No" to indicate whether an employee has left the organization.</td>
+            <td>text</td>
+          </tr>
+          <tr>
+            <td>YearsAtCompany</td>
+            <td>Number of years since the employee joined the organization.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>YearsInMostRecentRole</td>
+            <td>Number of years the employee has been in their most recent role.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>YearsSinceLastPromotion</td>
+            <td>Number of years since the employee last got promoted.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>YearsWithCurrManager</td>
+            <td>Number of years the employee has been with their current manager.</td>
+            <td>number</td>
+          </tr>
+        </table>
+        <br>
+        <!-- Education Level Table -->
+        <center> <strong>Education Level Table</strong></center>
+        <table border="1">
+
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+            <th>Datatype</th>
+          </tr>
+          <tr>
+            <td>EducationLevelID</td>
+            <td>A unique ID that connects to Education in DimEmployee.</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>EducationLevel</td>
+            <td>Provides meaning to the education level: Doctorate, Masters, Bachelors, High School, and No Formal
+              Qualifications.</td>
+            <td>text</td>
+          </tr>
+        </table>
+        <br>
+        <h3>Atlas Labs HR Dashboard</h3>
+        <div class='tableauPlaceholder' id='viz1697610748673' style='position: relative; max-width: 100%;'>
+          <noscript>
+            <a href='#'><img alt='HR Dashboard '
+                src='https://public.tableau.com/static/images/At/AtlasLabHRDashboard_16973043938720/HRDashboard/1_rss.png'
+                style='border: none' /></a>
+          </noscript>
+          <object class='tableauViz' style='display: none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='AtlasLabHRDashboard_16973043938720/HRDashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https://public.tableau.com/static/images/At/AtlasLabHRDashboard_16973043938720/HRDashboard/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+          </object>
+        </div>
+
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1697610748673');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          // Adjust the width and height based on the available space or your design
+          vizElement.style.width = '100%'; // Set the width as needed
+          vizElement.style.height = '600px'; // Set the height as needed
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <br>
+        <!-- Overview of Workforce -->
+        <h3>3. Overview of Workforce:</h3>
+        <p>Atlas Labs has a total of 1,470 employees, comprising 237 past employees and 1,233 current employees.</p>
+        <p>The attrition rate is 16.1%, suggesting the need for attrition reduction strategies.</p>
+
+        <!-- Hiring Trends -->
+        <h3>4. Hiring Trends:</h3>
+        <p>Historical hiring trends show variations over time, suggesting the need to investigate the causes behind
+          these fluctuations.</p>
+
+        <!-- Demographics Analysis -->
+        <h3>5. Demographics Analysis:</h3>
+        <p>Most current employees fall within the 20-29 age group, and a significant portion are married.</p>
+
+        <!-- Attrition Analysis -->
+        <h3>6. Attrition Analysis:</h3>
+        <p>Attrition rates vary by hire date, tenure, and travel frequency. Most attrition occurs within the first year
+          of employment.</p>
+        <p>"Frequent Travelers" have the highest attrition rate, indicating a possible need to investigate this group
+          further.</p>
+
+        <!-- Key Insights -->
+        <h3>7. Key Insights:</h3>
+        <p>Summarized findings for quick reference, highlighting the primary trends and challenges.</p>
+
+        <!-- Recommendations -->
+        <h3>8. Recommendations:</h3>
+        <p>Suggestions for addressing attrition, improving hiring strategies, and focusing on high-risk areas.</p>
+        <p>Encourage exit interviews and surveys to gather qualitative data.</p>
+
+        <!-- Conclusion -->
+        <h3>9. Conclusion:</h3>
+        <p>Concluding remarks, emphasizing the importance of implementing the recommendations to enhance HR policies and
+          employee retention.</p>
+
+        <div id="content">
+          <p><a href="https://public.tableau.com/app/profile/miraj.ahmed/vizzes" target="_blank">View my other
+              Dashboards from my <strong>Tableau</strong> public profile</a></p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div id="copyright">
+      <ul>
+        <h3>&copy; Miraj Ahmed</h3>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
